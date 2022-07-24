@@ -1,0 +1,78 @@
+@mixin card_item {
+    width: 45%;
+    border-radius: 3px;
+    margin-bottom: 11px;
+    padding: 55px 0px 38px 50px;
+    margin-right: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.title-sections {
+    text-align: center;
+    font-size: 24px;
+    color: #2F2F51;
+    margin-bottom: 48px;
+    padding-top: 67px;
+    font-weight: 700;
+}
+
+.servicas {
+    padding-top: 70px;
+
+    &-list {
+        display: flex;
+        /*justify-content: space-between;*/
+        justify-content: center;
+        flex-wrap: wrap;
+
+        /*@media screen and (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+        }*/
+    }
+}
+
+.card__item_one {
+    @include card_item;
+    background-image: url('../images/windowfon.png');
+}
+
+.card__item_two {
+   @include card_item;
+   background-image: url('../images/loggiafon.png');
+    
+}
+
+.card__item_three {
+    @include card_item;
+    background-image: url('../images/cottagefon.png');
+}
+
+.card__item_four {
+    @include card_item;
+    background-image: url('../images/glazingfon.png');
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    
+    &-title {
+    margin-left: 20px;
+    font-size: 24px;
+    width: 230px;
+    font-weight: 700;
+    }
+}
+
+.card__description {
+    width: 56%;
+    font-size: 16px;
+    font-weight: 400;
+}

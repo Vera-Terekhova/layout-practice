@@ -1,0 +1,180 @@
+@mixin main_description {
+    height: 58px;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin main-input {
+    border: none;
+    width: 84%;
+    height: 40px;
+    background: #E2E2E2;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+@mixin placeholder {
+    font-size: 12px;
+    padding-left: 16px;
+    color: #424268;
+}
+
+.main {
+    background-image: url('../images/mainfon.jpg');
+    height: 562px;
+    background-size: cover;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-info {
+    display: flex;
+    padding-top: 69px;
+}
+
+.main-info__information {
+    padding: 60px 52px 0px 93px;
+}
+
+.main-title {
+    width: 511px;
+    height: 125.75px;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 18px;
+
+    &__highlighted {
+     color:  #EF7F04;
+    font-weight: 700;
+    }
+}
+
+.prezent__advantegs {
+    display: flex;
+    color: #FFF;
+}
+
+.prezent__advantegs-description {
+    width: 176px;
+    padding-top: 21px;
+    @include main_description;
+
+    &__three {
+        width: 155px;
+        padding-top: 15px; 
+        @include main_description;
+    }
+}
+
+.feedbak {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 84%;
+    height: 428px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 400;
+
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+.feedbak__title {
+    padding-top: 43px;
+    padding-bottom: 27px; 
+    font-size: 18px;
+    font-weight: 700;
+    color: #2F2F51;
+}
+
+.feedback__input {
+    display: block;
+    width: 100%;
+
+    &-one {
+        @include main-input;
+    }
+
+    &-two {
+        @include main-input;
+    }
+
+    &-three {
+        @include main-input;
+    }
+}
+
+.checkbox {
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.check {
+    margin-left: 8%;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+.checkbox-label {
+    width: 75%;
+    height: 48px;
+    text-align: left;
+    font-size: 12px;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 10px;
+    }
+}
+
+
+.feedback-button {
+   width: 50%;
+   height: 11%;
+   font-weight: 700;
+   background-color: #EF7F04; 
+   color: #FFFFFF;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+.feedback-button:hover {
+    opacity: 0.7;
+}
+
+.feedback__input-one::placeholder{
+    @include placeholder;
+}
+
+.feedback__input-two::placeholder{
+    @include placeholder;
+}
+
+.feedback__input-three::placeholder{
+    @include placeholder;
+}
+
+.check::id{
+    background-color: #FFFFFF;
+    color: #2F2F51;
+}
+
+.roulette {
+    position: absolute;
+    left: -75px;
+    bottom: -66px;
+    width: 139%;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}

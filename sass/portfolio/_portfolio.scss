@@ -1,0 +1,36 @@
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+    @media screen and (max-width: 992px) {
+        max-width: 998px;
+    }    
+}
+
+.title-portfolio {
+    text-align: center;
+    font-size: 24px;
+    color: #2F2F51;
+    padding: 49px 48px;
+    font-weight: 700;
+}  
+
+.portfolio-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 101px 71px 101px;
+
+    &__one {
+        border-radius: 9px;
+    }
+
+    &__two {
+        
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+

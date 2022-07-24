@@ -1,0 +1,147 @@
+.company-container {
+    margin: 0 auto;
+}
+
+.title-company {
+    text-align: center;
+    font-size: 24px;
+    color: #2F2F51;
+    margin-bottom: 40px;
+    font-weight: 700;
+}  
+
+.company-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    background-color: #f2f2f2;
+  
+    &__description {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 18px;
+    } 
+  
+    &__description_color {
+      height: 39px;
+      width: 139px;
+      border-radius: 3px;
+      font-weight: 700;
+      color: #2F2F51;
+    }
+
+    &__description_color-two {
+        height: 39px;
+        width: 180px;
+        border-radius: 3px;
+        font-weight: 700;
+        color: #2F2F51;
+    }
+  
+    button:hover { 
+      color: #FFFFFF;
+      background-color: #EF7F04;
+    }
+}
+
+.company-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+
+    &__text {
+        height: 214px;
+        width: 304px;
+        padding-left: 248px;
+        padding-right: 52px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;  
+        
+        @media screen and (max-width: 992px) {
+            padding-left: 104px;
+            padding-right: 52px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        max-height: 461px;
+    }
+}
+
+.company-card__img {
+    width: 45%;
+}
+
+.company-card__img:first-child {
+    padding: 46px 0px 62px 50px;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 68px;
+}
+
+.company-info-item {
+    display: flex;
+    width: 350px;
+
+    &_one {
+      padding: 0px 25px 100px 0px;  
+    }
+
+    &_two {
+        padding: 0px 25px 100px 0px;  
+    }
+
+    &_three {
+        padding: 0px 25px 100px 0px;  
+    }
+
+    &_four {
+        padding: 0px 25px 100px 0px; 
+    }
+
+    &_five {
+        padding: 0px 25px 100px 0px;
+    }
+
+    &_six {
+        padding: 0px 25px 100px 0px;
+    }
+}
+
+.company-prezent {
+
+    &__text {
+        line-height: 2;
+    }
+}
+
+.company-buttons {
+    display: flex;
+    justify-content: center;
+
+    &__but {
+        width: 312px;
+        height: 54px;
+        background-color: #EF7F04;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 3px;
+        margin-bottom: 87px;
+    }
+
+    &__text {
+        padding-left: 22px;
+    }
+}
+
+.company-buttons:hover {
+    opacity: 0.7;
+}
